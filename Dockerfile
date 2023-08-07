@@ -1,4 +1,4 @@
-FROM maven:4.0 AS builder
+FROM maven:3.9 AS builder
 WORKDIR /app
 COPY . .
 RUN mvn clean package -Dmaven.test.skip=true
